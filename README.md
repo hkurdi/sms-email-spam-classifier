@@ -1,4 +1,4 @@
-### SMS & Email Spam Classifier
+# SMS & Email Spam Classifier
 
 A machine learning project for classifying SMS and email messages as spam or ham (not spam). The project involves data cleaning, exploratory data analysis (EDA), text preprocessing, model building, evaluation, and deployment. The final model achieves an accuracy of 96.9%.
 
