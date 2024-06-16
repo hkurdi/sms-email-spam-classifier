@@ -10,6 +10,18 @@ tfidf = pickle.load(open("vectorizer.pkl", 'rb'))
 model = pickle.load(open("model.pkl", 'rb'))
 ps = PorterStemmer()
 
+
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords')
+
+
 def transformText(text):
     text = text.lower()
     tokens = nltk.word_tokenize(text)
